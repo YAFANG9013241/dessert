@@ -71,20 +71,20 @@
     }
     .tab {
       position: absolute; /*tab空間抽掉*/
-      .pic {
-        /*class裡面有兩個名稱空格 選後面名稱*/
-        left: 277px;
-        top: 19px; /*定位位置*/
-      }
-      .text {
-        font-size: 16px;
-        background: #3f5d45;
-        color: #eaf0ed;
-        writing-mode: vertical-rl; /*文字方向垂直*/
-        padding: 10px;
-        top: 0;
-        left: 36px; /*定位位置*/
-      }
+    }
+    .pic {
+      /*class裡面有兩個名稱空格 選後面名稱*/
+      left: 277px;
+      top: 19px; /*定位位置*/
+    }
+    .text {
+      font-size: 16px;
+      background: #3f5d45;
+      color: #eaf0ed;
+      writing-mode: vertical-rl; /*文字方向垂直*/
+      padding: 10px;
+      top: 0;
+      left: 36px; /*定位位置*/
     }
     .info {
       /*text-align: center;*/

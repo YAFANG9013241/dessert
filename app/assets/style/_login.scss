@@ -33,28 +33,35 @@ $gray-color: #eaf0ed;
 
             .fa-user {
                 color: $green-color;
-                background-color: white;
+                background: var(--lightGreen);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 10%;
+                width: 20px;
             }
             .fa-key {
                 color: $green-color;
-                background-color: white;
+                background: var(--lightGreen);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 10%;
+                width: 20px;
             }
 
             .inputText {
                 outline: none;
+                height: 56px;
+                font-size: 16px;
+                background: var(--lightGreen);
+                color: var(--darkGreen);
+                border: none;
+                padding-left: 10px;
+                display: inline-block;
             }
         }
 
         .remenberBlock {
-            width: 78%;
+            width: 54%;
             margin-bottom: 3%;
             color: $gray-color;
             .checkBox {
@@ -142,7 +149,8 @@ $gray-color: #eaf0ed;
             margin: 60px auto;
             .social {
                 width: 100%;
-                height: 100px;
+                height: 90px;
+                margin-bottom: 20px;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
