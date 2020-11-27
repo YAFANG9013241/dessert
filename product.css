@@ -1,0 +1,180 @@
+﻿.pr_banner img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+}
+/*中間*/
+.pr_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 菜單 */
+.pr_menu {
+  font-family: PingFang TC;
+  width: 31.9%; /*.content 有設定flex 菜單及產品欄位置*/
+  text-align: center; /*文字水平排列*/
+  line-height: 65px; /*垂直排列*/
+  font-size: 24px;
+  font-weight: 600;
+}
+.pr_menu h2 {
+  background: #3f5d45;
+  color: #eaf0ed;
+}
+.menu nav {
+  display: flex;
+  flex-direction: column; /*縱向排列*/
+}
+.pr_menu a {
+  /* box-sizing: border-box; */
+  border: 1px solid #eaf0ed; /*邊框需設在li*/
+  font-size: 24px;
+  text-decoration: none;
+  color: #3f5d45;
+}
+.pr_menu a:hover {
+  background: #eaf0ed;
+}
+@media (max-width: 767px) {
+  .pr_content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .pr_menu {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/* 產品內容 */
+.pr_project {
+  width: 300px;
+  width: 68.1%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: PingFang TC;
+  box-sizing: border-box;
+}
+.project .item {
+  box-sizing: border-box;
+  position: relative; /*tab依據這裡定位*/
+  width: 316px;
+  display: flex; /*有設定flex 影響產品排數*/
+  flex-wrap: wrap;
+  padding-left: 20px;
+  /* padding-left: 3%; */
+  color: #3f5d45;
+}
+
+.project .item .img_box img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.project .tab {
+  position: absolute; /*tab空間抽掉*/
+}
+.pic {
+  /*class裡面有兩個名稱空格 選後面名稱*/
+  left: 277px;
+  top: 19px; /*定位位置*/
+}
+.text {
+  font-size: 16px;
+  background: #3f5d45;
+  color: #eaf0ed;
+  writing-mode: vertical-rl; /*文字方向垂直*/
+  padding: 10px;
+  top: 0;
+  left: 36px; /*定位位置*/
+}
+
+.info {
+  /*text-align: center;*/
+  /* width: 300px; */
+  line-height: 56px;
+  font-size: 20px;
+  border-top: 1px solid #eaf0ed;
+  border-bottom: 1px solid #eaf0ed;
+  border-left: 1px solid #eaf0ed;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  /* 不管邊寬只管寬度 */
+}
+.info .title {
+  box-sizing: border-box;
+  width: 173px;
+  font-weight: 300;
+  border-right: 1px solid #eaf0ed;
+}
+.info .price {
+  box-sizing: border-box;
+  width: 122px;
+  font-weight: 600;
+  border-right: 1px solid #eaf0ed;
+}
+
+.project a {
+  width: 300px;
+  line-height: 65px;
+  background: #eaf0ed;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #3f5d45;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project a .btn {
+  border: 1px solid #eaf0ed;
+}
+@media (max-width: 767px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  /* .project .item {
+    width: 50%;
+  } */
+}
+
+/* 分頁 */
+.pag {
+  margin: 10px 0 60px;
+  font-family: PingFang TC;
+  text-align: center;
+}
+
+.pag ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.pag a {
+  text-decoration: none;
+  color: #3f5d45;
+  padding: 16px 25px;
+  border: 1px solid #eaf0ed;
+  line-height: 65px;
+  /* height: 65px; */
+  /* border-right: 1px solid #eaf0ed; */
+}
+
+.pag a:hover {
+  background: #3f5d45;
+  color: #eaf0ed;
+}
+@media (max-width: 767px) {
+  .pag ul {
+    justify-content: center;
+  }
+}
+/*頁尾*/
