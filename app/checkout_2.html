@@ -1,0 +1,119 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<content class="ck-wrapper center kcontainer">
+    <div class="ck-form-container">
+        <form class="ck-form-content">
+            <ul class="ck-title">
+                <li>付款</li>
+                <li class="line-container">
+                    <ul class="line-status">
+                        <li class="circleCK"><i class="fas fa-check"></i></li>
+                        <li class="circleON"></li>
+                        <li class="circle"></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="ck-form">
+                <li>信用卡卡號</li>
+                <li>
+                    <input type="text" class="input-width-l" placeholder="9012-3456-7890-1234">
+                    <i class="far fa-credit-card cardPic"></i>
+                </li>
+            </ul>
+            <ul class="ck-form-sb">
+                <li>
+                    <span>持卡人姓名</span>
+                    <input type="text" class="input-width-s" placeholder="王">
+                </li>
+                <input type="text" class="input-width-s" placeholder="小明">
+            </ul>
+            <ul class="ck-form-sb">
+                <li>
+                    <span>有效期限</span>
+                    <select class="select-width-s">
+                        <option value="">月</option>
+                        <option value="">01</option>
+                        <option value="">02</option>
+                        <option value="">03</option>
+                        <option value="">04</option>
+                        <option value="">05</option>
+                        <option value="">06</option>
+                        <option value="">07</option>
+                        <option value="">08</option>
+                        <option value="">09</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                    </select>
+                </li>
+                <select class="select-width-s">
+                    <option value="">年</option>
+                    <option value="">2020</option>
+                    <option value="">2021</option>
+                    <option value="">2022</option>
+                    <option value="">2023</option>
+                    <option value="">2024</option>
+                    <option value="">2025</option>
+                    <option value="">2026</option>
+                    <option value="">2027</option>
+                    <option value="">2028</option>
+                    <option value="">2029</option>
+                </select>
+            </ul>
+            <ul>
+                <li>背面末三碼</li>
+                <input class="input-width-s" type="text" placeholder="123">
+            </ul>
+        </form>
+        <a href="checkout_3.html" class="ck-bg-yellow center">
+            <span>下一步</span>
+            </li>
+        </a>
+    </div>
+    <div class="ck-orderSummary">
+        <ul class="ck-orderDetails">
+            <li class="sub-title">訂單摘要</li>
+            <li class="details">
+                <span>小計</span>
+                <span>NT$ 2,700</span>
+            </li>
+            <li class="details">
+                <span>運費</span>
+                <span>NT$ 300</span>
+            </li>
+            <li class="details total">
+                <span>總計</span>
+                <span>NT$ 3,000</span>
+            </li>
+        </ul>
+        <ul class="ck-orderList">
+            <li class="sub-title">購物清單</li>
+            <li class="details">
+                <p class="first pic"></p>
+                <p>
+                    <span class="item">焦糖馬卡龍（2）</span>
+                    <span class="price">NT$ 900</span>
+                </p>
+            </li>
+            <li class="details">
+                <p class="second pic"></p>
+                <p>
+                    <span class="item">焦糖馬卡龍（2）</span>
+                    <span class="price">NT$ 900</span>
+                </p>
+            </li>
+            <li class="details">
+                <p class="third pic"></p>
+                <p>
+                    <span class="item">焦糖馬卡龍（2）</span>
+                    <span class="price">NT$ 900</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+</content>

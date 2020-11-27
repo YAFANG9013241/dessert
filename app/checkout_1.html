@@ -1,0 +1,106 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<content class="ck-wrapper center kcontainer">
+    <div class="ck-form-container">
+        <form class="ck-form-content">
+            <ul class="ck-title">
+                <li>運送</li>
+                <li class="line-container">
+                    <ul class="line-status">
+                        <li class="circleON"></li>
+                        <li class="circle"></li>
+                        <li class="circle"></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="ck-form-sb">
+                <li>
+                    <p>姓氏</p>
+                    <input type="text" class="input-width-s" placeholder="王">
+                </li>
+                <li>
+                    <p>名字</p>
+                    <input type="text" class="input-width-s" placeholder="小明">
+                </li>
+            </ul>
+            <ul class="ck-form">
+                <li>電話</li>
+                <input type="text" class="input-width-l" placeholder="0912-345-678">
+            </ul>
+            <ul class="ck-form-sb">
+                <li>地址
+                    <p class="ck-form-sb">
+                        <select class="select-width-s">
+                            <option value="">高雄市</option>
+                            <option value="">臺北市</option>
+                            <option value="">新北市</option>
+                            <option value="">桃園市</option>
+                            <option value="">臺中市</option>
+                            <option value="">臺南市</option>
+                        </select>
+                        <select class="select-width-s">
+                            <option value="">新興區</option>
+                            <option value="">楠梓區</option>
+                            <option value="">左營區</option>
+                            <option value="">鼓山區</option>
+                            <option value="">三民區</option>
+                            <option value="">苓雅區</option>
+                            <option value="">前金區</option>
+                            <option value="">鹽埕區</option>
+                            <option value="">前鎮區</option>
+                            <option value="">旗津區</option>
+                            <option value="">小港區</option>
+                        </select>
+                    </p>
+                    <input class="input-width-l closer" type="text" placeholder="幸福路520號">
+                </li>
+            </ul>
+        </form>
+        <a href="checkout_2.html" class="ck-bg-yellow center">下一步</a>
+    </div>
+    <div class="ck-orderSummary">
+        <ul class="ck-orderDetails">
+            <li class="sub-title">訂單摘要</li>
+            <li class="details">
+                <span>小計</span>
+                <span>NT$ 2,700</span>
+            </li>
+            <li class="details">
+                <span>運費</span>
+                <span>NT$ 300</span>
+            </li>
+            <li class="details total">
+                <span>總計</span>
+                <span>NT$ 3,000</span>
+            </li>
+        </ul>
+        <ul class="ck-orderList">
+            <li class="sub-title">購物清單</li>
+            <li class="details">
+                <p class="first pic"></p>
+                <p>
+                    <span class="item">焦糖馬卡龍（2）</span>
+                    <span class="price">NT$ 900</span>
+                </p>
+            </li>
+            <li class="details">
+                <p class="second pic"></p>
+                <p>
+                    <span class="item">焦糖馬卡龍（2）</span>
+                    <span class="price">NT$ 900</span>
+                </p>
+            </li>
+            <li class="details">
+                <p class="third pic"></p>
+                <p>
+                    <span class="item">焦糖馬卡龍（2）</span>
+                    <span class="price">NT$ 900</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+</content>

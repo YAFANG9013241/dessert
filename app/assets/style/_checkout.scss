@@ -1,0 +1,366 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightGreen: #eaf0ed;
+    --darkGreen: #3f5d45;
+    --greyGreen: #8da291;
+    --ivory: #ffe180;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// img {
+//     display: block;
+// }
+
+.kcontainer {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* ------content-------- */
+.ck-wrapper {
+    .ck-form-container {
+        margin-right: 20px;
+        max-width: 460px;
+
+        .ck-form-content {
+            background: var(--darkGreen);
+            color: var(--lightGreen);
+            padding: 40px 40px 30px 40px;
+            font-size: 20px;
+            font-weight: bold;
+
+            input,
+            select {
+                height: 56px;
+                font-size: 16px;
+                background: var(--lightGreen);
+                color: var(--darkGreen);
+                outline: none;
+                border: none;
+                margin-top: 8px;
+                padding-left: 20px;
+                display: inline-block;
+            }
+
+            .ck-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 36px;
+                font-weight: bold;
+                margin: 0 auto 30px auto;
+                max-width: 380px;
+
+                .line-container {
+                    display: flex;
+                    width: 190px;
+
+                    .line-status {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        height: 1px;
+                        background: var(--greyGreen);
+
+                        .circleON {
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            background: var(--darkGreen);
+                            border: 1px solid var(--greyGreen);
+                            border-radius: 50%;
+                            position: relative;
+                        }
+
+                        .circleON::before {
+                            content: "";
+                            width: 16px;
+                            height: 16px;
+                            background: var(--lightGreen);
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 1px;
+                            left: 1px;
+                        }
+
+                        .circle {
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            background: var(--darkGreen);
+                            border: 1px solid var(--greyGreen);
+                            border-radius: 50%;
+                        }
+
+                        .circleCK {
+                            width: 19px;
+                            height: 19px;
+                            display: inline-block;
+                            color: var(--darkGreen);
+                            background: var(--lightGreen);
+                            border-radius: 50%;
+                            font-size: 14px;
+                            padding: 3px 3px;
+                        }
+                    }
+                }
+            }
+
+            .cardPic {
+                position: absolute;
+                right: 20px;
+                bottom: 18px;
+                color: var(--darkGreen);
+            }
+
+            .ck-form-sb {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto 16px auto;
+                max-width: 380px;
+            }
+
+            .input-width-s,
+            .select-width-s {
+                width: 186px;
+                display: flex;
+                align-self: flex-end;
+            }
+
+            .ck-form {
+                position: relative;
+                margin: 0 auto 16px auto;
+                max-width: 380px;
+            }
+
+            .input-width-l {
+                width: 380px;
+            }
+
+            .closer {
+                margin-top: -8px;
+            }
+        }
+
+        .ck-bg-yellow {
+            background: var(--ivory);
+            color: var(--darkGreen);
+            height: 65px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+
+    .ck-orderSummary {
+        color: var(--greyGreen);
+        width: 300px;
+
+        .sub-title {
+            background: var(--lightGreen);
+            font-weight: bold;
+            font-size: 24px;
+            padding: 16px 0;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+            max-width: 260px;
+            margin: 8px auto 16px auto;
+            font-size: 16px;
+            align-items: center;
+        }
+
+        .ck-orderDetails {
+            margin-bottom: 20px;
+            border: 2px solid var(--lightGreen);
+
+            .total {
+                margin-top: 16px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+
+        .ck-orderList {
+            border: 2px solid var(--lightGreen);
+
+            .pic {
+                width: 120px;
+                height: 80px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                overflow: hidden;
+            }
+
+            .first {
+                background-image: url(https://bit.ly/2QvsT63);
+            }
+
+            .second {
+                background-image: url(https://bit.ly/2zBDAxX);
+            }
+
+            .third {
+                background-image: url(https://bit.ly/2zKOP7w);
+            }
+
+            .item {
+                display: block;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            .price {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .ck-wrapper {
+        display: inline-block;
+        margin-top: 75px;
+        padding: 0;
+        width: 100%;
+
+        .ck-form-container {
+            max-width: inherit;
+            margin: 0;
+
+            .ck-form-content {
+                padding: 40px 20px 30px 20px;
+                margin: 0 auto;
+            }
+        }
+
+        .ck-orderSummary {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .ck-wrapper {
+        .ck-form-container {
+            .ck-form-content {
+                .ck-form-sb {
+                    margin: 0 auto 10px;
+                }
+
+                .input-width-s,
+                .select-width-s {
+                    width: 137px;
+                }
+
+                .ck-form {
+                    margin: 0 auto 10px;
+                }
+
+                .input-width-l {
+                    width: 280px;
+                }
+                .closer {
+                    margin-top: -4px;
+                }
+            }
+        }
+    }
+}
+.mail-receipt ul {
+    .adjust-loc {
+        display: flex;
+        justify-content: space-between;
+        width: 380px;
+        position: relative;
+
+        .ajust-cbox {
+            position: absolute;
+            right: 85px;
+            top: -28px;
+        }
+
+        .ajust-fontsize {
+            font-size: 16px;
+        }
+    }
+}
+.receipt-option-container {
+    width: 100%;
+    overflow: hidden;
+
+    .receipt-option-slide {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        height: 55px;
+        max-width: 380px;
+        border: 1px solid var(--lightGreen);
+        margin: 0 auto 30px auto;
+        overflow: hidden;
+
+        .slide {
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            line-height: 52px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        .slide-controls .slider-tab {
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            left: 0;
+            border-radius: 5px;
+            background: var(--lightGreen);
+            color: var(--darkGreen);
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        #m-receipt:checked ~ label.m-receipt {
+            color: var(--darkGreen);
+            background: var(--lightGreen);
+        }
+
+        #e-receipt:checked ~ label.e-receipt {
+            color: var(--darkGreen);
+            background: var(--lightGreen);
+        }
+    }
+
+    .receipt-option-content {
+        display: flex;
+        width: 200%;
+        overflow: hidden;
+
+        .electronic-receipt,
+        .mail-receipt {
+            width: 50%;
+            transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    }
+}
