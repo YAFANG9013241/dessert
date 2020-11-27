@@ -1,0 +1,198 @@
+.ca_wrap {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 600px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  .ca_orderContent {
+    height: 193px;
+    width: 65.95%;
+    display: flex;
+    flex-direction: column;
+    //background: pink;
+
+    h1 {
+      font-size: 24px;
+      color: $greenColor;
+      background: #eaf0ed;
+      padding: 16px 0px;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 13px;
+    }
+    .item {
+      padding: 20px 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 200px;
+      border-bottom: 1px solid #eaf0ed;
+      .pic1 {
+        width: 110px;
+        height: 110px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://bit.ly/2QvsT63");
+        margin: auto 0;
+      }
+      .pic2 {
+        width: 110px;
+        height: 110px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://bit.ly/2zBDAxX");
+        margin: auto 0;
+      }
+      .pic3 {
+        width: 110px;
+        height: 110px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://bit.ly/2zKOP7w");
+        margin: auto 0;
+      }
+      .text {
+        // width: 300px;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .title {
+          color: $greenColor;
+          font-size: 20px;
+          line-height: 1.3;
+          p:nth-child(2) {
+            font-size: 16px;
+          }
+        }
+      }
+      ul {
+        display: flex;
+        line-height: 48px;
+        text-align: center;
+      }
+      li {
+        height: 48px;
+        width: 48px;
+        font-size: 16px;
+        padding: 0;
+        border: 1px solid #eaf0ed;
+      }
+      .word {
+        font-size: 20px;
+        font-weight: 600;
+        color: $greenColor;
+      }
+      .remove {
+        color: #3f5d45;
+      }
+    }
+  }
+  .ca_orderSummary {
+    width: 31.91%;
+    .ca_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 193px;
+      background: $greenColor;
+      padding: 16px 20px;
+      h2 {
+        font-size: 24px;
+        padding: 16px 0px;
+        font-weight: 600;
+        text-align: center;
+        color: #eaf0ed;
+        border-bottom: 1px solid #eaf0ed;
+      }
+      .word {
+        margin-top: 16px;
+        color: #eaf0ed;
+        p {
+          display: flex;
+          justify-content: space-between;
+          line-height: 2;
+          &:nth-child(3) {
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 6px;
+          }
+        }
+      }
+    }
+    a {
+      display: block;
+      background: #ffe180;
+      font-size: 24px;
+      padding: 17px 102px;
+      text-decoration: none;
+      color: $greenColor;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .ca_wrap {
+    flex-direction: column;
+    height: 1040px;
+    .ca_orderContent {
+      width: 100%;
+      .item {
+        width: 90%;
+        margin: 0 auto;
+        .text {
+          flex-direction: column;
+          //align-items: center;
+          .title,
+          .num {
+            width: 55%;
+            padding-bottom: 10px;
+            position: relative;
+          }
+        }
+        .pic1,
+        .pic2,
+        .pic3 {
+          width: 40%;
+          height: 150px;
+          background-position: center center;
+          //background-image: url("https://bit.ly/2QvsT63");
+        }
+        .word {
+          border-top: 1px solid #eaf0ed;
+          margin-top: 10px;
+          width: 100%;
+          padding: 0;
+          h3 {
+            text-align: end;
+            position: relative;
+            top: 10px;
+          }
+        }
+        .remove {
+          display: none;
+        }
+      }
+    }
+    .ca_orderSummary {
+      width: 100%;
+      margin: 0 auto;
+      .ca_info {
+        background: #fff;
+        h2 {
+          padding: 16px 109px;
+          color: $greenColor;
+          background: #eaf0ed;
+        }
+        .word {
+          color: $greenColor;
+        }
+      }
+    }
+  }
+}

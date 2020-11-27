@@ -1,0 +1,108 @@
+/*字體自己命名導入*/
+@font-face {
+  font-family: PingFang TC;
+  src: url(../font-family/PingFangTC-Regular.ttf);
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+#burger {
+  display: none;
+}
+.checkbtn {
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+  margin-left: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: PingFang TC;
+  padding: 32px 0;
+  margin: 0 auto;
+  .logo {
+    // background-image: url("../../../app/assets/images/dessert pic/logo-all-dark.svg");
+    background-image: url("../images/dessert pic/logo-all-dark.svg");
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 40px;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+  li {
+    padding-left: 60px;
+    line-height: 22px;
+
+    &:last-child {
+      padding-left: 79px;
+    }
+  }
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3f5d45;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: -50%;
+      border-bottom: 3px solid #3f5d45;
+    }
+    &:hover:after {
+      width: 200%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .checkbtn {
+    display: block;
+  }
+  #burger:checked ~ ul {
+    left: 0;
+  }
+  .header {
+    padding: 12px 0;
+    .logo {
+      background-image: url("../images/footer pig/logotype-lg-dark.svg");
+      width: 115px;
+      height: 18px;
+    }
+    ul {
+      background: #ffffff;
+      flex-wrap: wrap;
+      position: absolute;
+      width: 100%;
+      top: 100px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    li {
+      width: 100%;
+      line-height: 60px;
+      border-bottom: 1px solid #000;
+      padding-left: 0;
+      &:nth-child(4) {
+        display: none;
+      }
+    }
+    a {
+      font-size: 20px;
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

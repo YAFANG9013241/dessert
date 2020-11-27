@@ -1,0 +1,387 @@
+$green-color: #3f5d45;
+$gray-color: #eaf0ed;
+.in_index {
+    //padding-top: 60px;
+}
+
+.in_banner {
+    background-image: url(../images/indeximages/index_pic/photo-banner.jpg);
+    background-size: cover;
+    background-position: center center; //照片的位置
+    margin: 0px auto;
+    min-height: 496px;
+    max-width: 940px;
+}
+.in_contentPic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    bottom: 100px;
+
+    .in_contentPic1 {
+        background-image: url(../images/indeximages/index_pic/photo-hover1.jpg);
+    }
+    .in_contentPic2 {
+        background-image: url(../images/indeximages/index_pic/photo-hover2.jpg);
+    }
+    .in_contentPic3 {
+        background-image: url(../images/indeximages/index_pic/photo-hover3.jpg);
+    }
+
+    .picHover {
+        background-size: cover;
+        background-position: center center;
+        min-height: 260px;
+        width: 245px;
+        margin: auto 1%;
+        display: flex;
+        background-color: rgba(98, 128, 100, 0.8);
+        /*   // 設置背景混和模式為相乘模式 */
+        background-blend-mode: multiply;
+        a {
+            display: flex;
+            text-decoration: none;
+            width: 100%;
+            writing-mode: vertical-lr;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 8px;
+            font-size: 24px;
+            color: rgb(255, 216, 87);
+        }
+    }
+    .picHover:hover {
+        background-color: rgba(255, 213, 87, 0.1);
+        /*   // 設置背景混和模式為相乘模式 */
+        background-blend-mode: multiply;
+        a {
+            color: $green-color;
+        }
+    }
+}
+
+//以下兩個code差異很小可以在減少code
+.in_descriptionFirst {
+    background-color: #eaf0ed;
+    background-size: auto 420px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    .in_ds {
+        margin: 0px auto;
+        display: flex;
+        height: 420px;
+        justify-content: space-between;
+        max-width: 940px;
+        // flex-direction: row;
+        // justify-content: space-between;
+        .descriptionPic1 {
+            background-image: url(../images/indeximages/index_pic/photo-content1.jpg);
+            background-size: cover;
+            background-position: center center;
+            min-height: 460px;
+            width: 460px;
+            position: relative;
+            bottom: 5%;
+        }
+
+        p {
+            writing-mode: vertical-lr;
+            writing-mode: vertical-rl;
+            font-size: 16px;
+            height: 80%;
+            line-height: 30px;
+            margin-top: 5%;
+            letter-spacing: 5px;
+            color: #8da291;
+        }
+
+        .descriptionPic2 {
+            position: relative;
+            bottom: 5%;
+            img {
+                min-height: 308px;
+                width: 90px;
+            }
+        }
+    }
+}
+.in_descriptionFirst_phone {
+    display: none;
+}
+
+.in_descriptionSecond {
+    background-color: #eaf0ed;
+    background-size: auto 420px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    .in_ds {
+        padding-left: 60px;
+        margin: 0px auto;
+        display: flex;
+        height: 420px;
+        justify-content: space-between;
+        max-width: 940px;
+        // flex-direction: row;
+        // justify-content: space-between;
+        .descriptionPic1 {
+            background-size: cover;
+            background-position: center center;
+            min-height: 460px;
+            width: 460px;
+            background-image: url(../images/indeximages/index_pic/photo-content2.jpg);
+            position: relative;
+            bottom: 5%;
+        }
+
+        p {
+            writing-mode: vertical-lr;
+            writing-mode: vertical-rl;
+            font-size: 16px;
+            height: 80%;
+            line-height: 30px;
+            margin-top: 5%;
+            letter-spacing: 5px;
+            color: #8da291;
+        }
+
+        .descriptionPic2 {
+            position: relative;
+            bottom: 5%;
+            img {
+                min-height: 308px;
+                width: 90px;
+            }
+        }
+    }
+}
+//以上兩個code差異很小可以在減少code
+
+.in_descriptionSecond_phone {
+    display: none;
+}
+.in_descriptionThird {
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    img {
+        width: 110px;
+        height: 310px;
+    }
+}
+.in_descriptionThird_phone {
+    display: none;
+}
+
+.i_allMenupic {
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: visible;
+    overflow-y: hidden;
+    .i_menuPic {
+        margin-right: 20px;
+        width: 300px;
+        /* background-color: seagreen; */
+        position: relative;
+        margin-bottom: 20px;
+
+        .pic {
+            height: 315px; /*不設的話會有bottom會突出一點px*/
+            /* background-color:blue; */
+        }
+
+        .picTitle {
+            background-color: #3f5d45;
+            writing-mode: vertical-rl;
+            color: #eaf0ed;
+            font-size: 16px;
+            position: absolute;
+            top: 0;
+            left: 40px;
+            width: 36px;
+            height: 106.73px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 3px;
+        }
+
+        .favorite {
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 258px;
+            padding-top: 19px;
+            /* background-color:white; */
+        }
+
+        .namePrice {
+            height: 56px;
+            display: flex;
+            border-left: 1px #eaf0ed solid;
+            border-right: 1px #eaf0ed solid;
+            font-size: 20px;
+        }
+
+        .name {
+            width: 173px;
+            padding: 14px 33px 14px 33px;
+            border-right: 1px #eaf0ed solid;
+        }
+
+        .price {
+            width: 127px;
+            padding: 14px 20px 14px 25px;
+        }
+
+        .cart {
+            /* width:300px; */
+            height: 65px;
+            font-size: 24px;
+            background-color: #eaf0ed;
+            /* display: flex;
+    justify-content:center;
+    align-items:center;     */
+        }
+
+        .cart a {
+            display: block;
+            text-decoration: none;
+            line-height: 65px;
+            text-align: center;
+            color: #3f5d45;
+            border: 1px solid black;
+        }
+
+        a:hover {
+            background-color: rgb(255, 208, 0);
+        }
+    }
+    .i_menuPic:hover {
+        box-shadow: 0 0 10px rgba(98, 128, 80, 1);
+        transition: 0.3s;
+    }
+}
+
+@media (max-width: 768px) {
+    .in_contentPic {
+        .picHover {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .in_descriptionFirst {
+        display: none;
+    }
+
+    .in_descriptionSecond {
+        display: none;
+    }
+
+    .in_descriptionFirst_phone {
+        display: flex;
+        flex-direction: column;
+        margin-top: -80px;
+        .in_ds {
+            margin: 0 auto;
+            .descriptionPic2 {
+                max-width: 380px;
+                max-height: 120px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+
+            .descriptionPic1 {
+                background-image: url(../images/indeximages/index_pic/photo-content1.jpg);
+                background-size: cover;
+                background-position: center center;
+                min-height: 250px;
+                max-width: auto;
+                bottom: 5%;
+            }
+
+            .in_p {
+                background-color: $gray-color;
+                padding: 40px 0;
+                color: $green-color;
+                .text4 {
+                    margin: 0 auto;
+                    margin-bottom: 40px;
+                    width: 72%;
+                    line-height: 25px;
+                }
+
+                .text2 {
+                    margin: 0 auto;
+
+                    width: 72%;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+
+    .in_descriptionSecond_phone {
+        display: flex;
+        flex-direction: column;
+        .in_ds {
+            margin: 0 auto;
+            .descriptionPic2 {
+                max-width: 380px;
+                max-height: 120px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+
+            .descriptionPic1 {
+                background-image: url(../images/indeximages/index_pic/photo-content2.jpg);
+                background-size: cover;
+                background-position: center center;
+                min-height: 250px;
+                max-width: auto;
+                bottom: 5%;
+                background-color: $gray-color;
+            }
+
+            .in_p {
+                background-color: $gray-color;
+                padding-top: 20px;
+                padding: 10% 0;
+                color: $green-color;
+                .text4 {
+                    margin: 0 auto;
+                    margin-bottom: 40px;
+                    width: 72%;
+                    line-height: 25px;
+                }
+
+                .text2 {
+                    margin: 0 auto;
+
+                    width: 72%;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .in_descriptionThird {
+        display: none;
+    }
+    .in_descriptionThird_phone {
+        display: block;
+        margin: 20px auto;
+        max-width: 380px;
+        max-height: 120px;
+    }
+}

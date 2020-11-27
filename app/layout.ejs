@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <!-- <link rel="stylesheet" href="../dist/assets/style/all.css"> -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css' />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <input type="checkbox" id="burger">
+      <label for="burger" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="logo"></div>
+      <ul>
+        <li><a href="./index.html">首頁</a></li>
+        <li><a href="#">甜點</a></li>
+        <li><a href="./login.html">登入</a></li>
+        <li><a href="./car.html"><img src="./assets/images/dessert pic/shopping_cart.png" alt="購物車圖案"></a></li>
+      </ul>
+      <a href="./car.html" class="checkbtn"><img src="./assets/images/dessert pic/shopping_cart.png" alt="購物車圖案"></a>
+    </header>
+
+    <%- contents %>
+
+  </div>
+
+  <footer class="footer">
+    <div class="header">
+      <div class="search">
+        <div class="logo">
+          <img src="./assets/images/footer pig/logo-light.svg" alt="">
+          <p>訂閱你我的甜蜜郵件</p>
+        </div>
+
+        <div class="email">
+          <div class="pic">
+            <img src="./assets/images/footer pig/mail-24px.png" alt="">
+          </div>
+          <input type="text">
+          <div class="go"><a href=""><img src="./assets/images/footer pig/arrow_forward-24px.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <div class="bottom">
+      <div class="left">
+        <div class="logo">
+          <img src="./assets/images/footer pig/logotype-lg-dark.svg" alt="">
+        </div>
+        <div class="nav">
+          <p>07-1234-5678</p>
+          <p>sweetaste@email.com</p>
+          <p>800 高雄市新興區幸福路520號</p>
+        </div>
+        <div class="msg">
+          <a href="#"><img src="./assets/images/footer pig/ic-line@.svg" alt=""></a>
+          <a href="#"><img src="./assets/images/footer pig/ic-facebook.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="right">
+        <img src="./assets/images/footer pig/sm-今天是個吃甜點的好日子.png" alt="">
+        <p>© 2018 Sweetaste* All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
