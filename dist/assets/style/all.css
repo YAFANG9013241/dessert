@@ -836,7 +836,7 @@ table {
   @media (max-width: 768px) {
     .l_content .l_menber {
       width: 80%;
-      margin: 60px auto; }
+      margin: 0 auto; }
       .l_content .l_menber .social {
         width: 100%;
         height: 90px;
@@ -1636,7 +1636,7 @@ table {
 @media (max-width: 767px) {
   .ck-wrapper {
     display: inline-block;
-    margin-top: 75px;
+    margin-top: 0px;
     padding: 0;
     width: 100%; }
     .ck-wrapper .ck-form-container {
